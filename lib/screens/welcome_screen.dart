@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:fluttrt_logn_ui/screens/login_screen.dart';
+import 'package:fluttrt_logn_ui/screens/sign_up_screen.dart';
+import 'package:get/get.dart';
 
 class WelcomeScreen extends StatelessWidget {
   WelcomeScreen({super.key});
@@ -49,7 +52,9 @@ class WelcomeScreen extends StatelessWidget {
                   child: SizedBox(
                     height: 50,
                     child: OutlinedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(() => LoginScreen());
+                      },
                       style: OutlinedButton.styleFrom(
                           side: BorderSide(color: Colors.black)),
                       child: Text(
@@ -69,7 +74,9 @@ class WelcomeScreen extends StatelessWidget {
                   child: SizedBox(
                     height: 50,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.to(() => SignUpScreen());
+                      },
                       style: ElevatedButton.styleFrom(primary: Colors.black),
                       child: Text("Sign Up"),
                     ),

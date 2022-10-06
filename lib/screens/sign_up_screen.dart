@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:fluttrt_logn_ui/common/custom_textfield.dart';
+import 'package:fluttrt_logn_ui/screens/login_screen.dart';
+import 'package:get/get.dart';
 
 class SignUpScreen extends StatelessWidget {
   SignUpScreen({super.key});
@@ -97,7 +99,9 @@ class SignUpScreen extends StatelessWidget {
                     height: 5,
                   ),
                   TextButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.to(() => LoginScreen());
+                    },
                     child: Text.rich(
                       TextSpan(
                         text: "Already have an Account? ",

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttrt_logn_ui/screens/on_boarding_screen.dart';
 import 'package:fluttrt_logn_ui/screens/welcome_screen.dart';
 import 'package:get/get.dart';
 
@@ -93,6 +94,7 @@ class _SplashScreenState extends State<SplashScreen> {
   startAnimation() async {
     await Future.delayed(Duration(milliseconds: 500));
     setState(() => animate = true);
-    Get.to(WelcomeScreen());
+    await Future.delayed(Duration(milliseconds: 2000));
+    Get.to(() => OnBoardingScreen());
   }
 }

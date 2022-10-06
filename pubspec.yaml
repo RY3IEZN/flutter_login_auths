@@ -35,6 +35,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   get:
+  liquid_swipe:
+  smooth_page_indicator:
+  flutter_otp_text_field:
 
 dev_dependencies:
   flutter_test:
